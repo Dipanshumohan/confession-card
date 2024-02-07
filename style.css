@@ -28,10 +28,11 @@ p {
     font-size: 29px;
 
 }
+
 .sixth-block {
 
-    
-    
+
+
     padding: 20px 100px;
     width: 300px;
     height: 300px;
@@ -39,27 +40,27 @@ p {
 }
 
 .fifth-block {
-      
-    padding: 5px 40px; 
+
+    padding: 5px 40px;
     width: 300px;
-    
-    
-    
+
+
+
 
 }
 
-.fourth-block{
+.fourth-block {
     padding: 5px 40px;
     width: 400px;
-    
+
 }
 
-.third-block{
+.third-block {
     padding: 5px 30px;
     width: 300px;
 }
 
-.second-block{
+.second-block {
 
     padding: 5px 30px;
     width: 500px;
@@ -67,7 +68,7 @@ p {
 
 .first-block {
 
-    padding: 5px 30px ;
+    padding: 5px 30px;
     width: 400px;
 }
 
@@ -76,39 +77,45 @@ p {
     padding: 5px 30px;
     width: 400px;
 }
+
 .Eight-block {
 
     padding: 5px 30px;
     width: 500px;
 }
+
 .ninth-block {
 
     padding: 2px 30px;
     width: 400px;
-    
+
 }
+
 .pookie {
-    
-      width: 400px;
-      margin-top: -20px;
-      padding-bottom: 20px ;
-      
+
+    width: 400px;
+    margin-top: -20px;
+    padding-bottom: 20px;
+
 }
+
 .tenth-block {
 
     padding: 2px 30px;
     width: 400px;
 }
+
 .eleventh-block {
 
-    
+
     width: 190px;
     height: 190px;
     border-radius: 50%;
 
 }
+
 .heart {
-    
+
     padding: 10px;
     width: 170px;
     text-align: center;
@@ -120,4 +127,3 @@ p {
     font-size: 45px;
 
 }
-

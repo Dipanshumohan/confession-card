@@ -1,7 +1,7 @@
 let highestZ = 1;
 
 class Paper {
-              
+
     holdingPaper = false;
 
     prevMouseX = 0;
@@ -15,46 +15,46 @@ class Paper {
 
     currentPaperX = 0;
     currentPaperY = 0;
-      
+
     init(paper) {
 
         paper.addEventListener('mousedown', (e) => {
 
-            this.holdingPaper = true ;
+            this.holdingPaper = true;
 
             paper.style.zIndex = highestZ;
 
             highestZ += 1;
 
-            if( e.button === 0) {
+            if (e.button === 0) {
                 this.prevMouseX = this.mouseX;
                 this.prevMouseY = this.mouseY;
 
                 console.log(this.prevMouseX);
                 console.log(this.prevMouseY);
             }
-            
+
         })
 
         document.addEventListener('mousemove', (e) => {
-                    
-                  this.mouseX = e.clientX;
-                  this.mouseY = e.clientY;
 
-                  this.velocityX = this.mouseX - this.prevMouseX;
-                  this.velocityY = this.mouseY - this.prevMouseY;
+            this.mouseX = e.clientX;
+            this.mouseY = e.clientY;
 
-                  if(this.holdingPaper) {
+            this.velocityX = this.mouseX - this.prevMouseX;
+            this.velocityY = this.mouseY - this.prevMouseY;
 
-                    this.currentPaperX += this.velocityX;
-                    this.currentPaperY += this.velocityY;
+            if (this.holdingPaper) {
 
-                    this.prevMouseX = this.mouseX ;
-                    this.prevMouseY = this.mouseY ;
+                this.currentPaperX += this.velocityX;
+                this.currentPaperY += this.velocityY;
 
-                    paper.style.transform = ` translateX(${this.currentPaperX}px) translateY(${this.currentPaperY}px) `;
-                  }
-                })
+                this.prevMouseX = this.mouseX;
+                this.prevMouseY = this.mouseY;
+
+                paper.style.transform = ` translateX(${this.currentPaperX}px) translateY(${this.currentPaperY}px) `;
+            }
+        })
 
         window.addEventListener('mouseup', (e) => {
             console.log('mouse button is released');
